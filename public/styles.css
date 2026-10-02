@@ -1,0 +1,47 @@
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:#020617;color:#e2e8f0;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+textarea{resize:vertical}
+@media print{
+  :root{padding:0!important}
+  html,body{background:#fff!important;color:#000!important}
+  body *{visibility:hidden}
+  .print-area,.print-area *{visibility:visible;color:#000!important;background:transparent!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .print-area{background:#fff!important;position:absolute;left:0;top:0;box-shadow:none!important;margin:0!important;font-family:'Courier New',monospace!important}
+  .print-area svg rect{fill:#000!important}
+  @page{size:80mm auto;margin:0}
+}
+
+/* ---------- Tema claro (html.light) ---------- */
+html{color-scheme:dark}
+html.light{color-scheme:light}
+html.light body{background:#f1f5f9;color:#0f172a}
+html.light .login-bg{background-image:radial-gradient(ellipse at top,#cffafe,#f1f5f9 60%)!important}
+/* superfícies */
+html.light .bg-slate-900{background:#fff}
+html.light .bg-slate-800{background:#f1f5f9}
+html.light .bg-slate-700{background:#e2e8f0}
+html.light .bg-slate-800\/60{background:#f1f5f9}
+html.light .bg-slate-950\/70{background:#e2e8f0}
+html.light [data-order-id].bg-slate-800{background:#fff}
+html.light .hover\:bg-slate-800:hover{background:#f1f5f9}
+html.light .hover\:bg-slate-700:hover{background:#e2e8f0}
+html.light .hover\:bg-slate-600:hover{background:#cbd5e1}
+html.light .hover\:bg-red-500\/30:hover{background:rgba(239,68,68,.25)}
+/* bordas */
+html.light .border-slate-800{border-color:#e2e8f0}
+html.light .border-slate-700{border-color:#cbd5e1}
+/* textos */
+html.light .text-slate-200{color:#1e293b}
+html.light .text-slate-300{color:#334155}
+html.light .text-slate-400{color:#475569}
+html.light .text-slate-500{color:#64748b}
+html.light .text-slate-600{color:#94a3b8}
+html.light .text-cyan-400{color:#0891b2}
+html.light .text-cyan-300{color:#0e7490}
+html.light .text-amber-300{color:#b45309}
+html.light .text-amber-200\/80{color:#92400e}
+html.light .text-emerald-300{color:#047857}
+html.light .text-sky-300{color:#0369a1}
+html.light .text-red-300{color:#b91c1c}
+html.light .text-red-400{color:#dc2626}
